@@ -1,1 +1,1 @@
-ls -xStp | sed 's/  /,/g'
+ls -mStp
