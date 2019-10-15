@@ -6,9 +6,11 @@ func PrintComb() {
 	for i := '0'; i <= '7'; i++ {
 		for j := '1'; j <= '8'; j++ {
 			for k := '2'; k <= '9'; k++ {
-				z01.PrintRune(i)
-				z01.PrintRune(j)
-				z01.PrintRune(k)
+				if i < j && j < k {
+					z01.PrintRune(i)
+					z01.PrintRune(j)
+					z01.PrintRune(k)
+				}
 				if i != '7' || j != '8' || k != '9' {
 					z01.PrintRune(',')
 					z01.PrintRune(' ')
