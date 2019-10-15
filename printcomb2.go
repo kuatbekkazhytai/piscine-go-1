@@ -3,10 +3,10 @@ package printcomb2
 import "github.com/01-edu/z01"
 
 func PrintComb() {
-	var iRune rune = '0';
-	var jRune rune = '0';
-	var kRune rune = '0';
-	var lRune rune = '0';
+	var iRune rune = '0'
+	var jRune rune = '0'
+	var kRune rune = '0'
+	var lRune rune = '0'
 	for i := 0; i <= 9; i++ {
 		for j := 0; j <= 9; j++ {
 			for k := 0; k <= 9; k++ {
