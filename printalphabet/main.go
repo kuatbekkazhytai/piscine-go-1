@@ -1,8 +1,9 @@
-package printalphabet
+package main
 
-func main() {
-	for j := 97; j <= 122; j++ {
-		print(string(j))
+func main(){
+	var aRune rune = 'z'
+	for iRune := 'a'; iRune <= aRune; iRune++ {
+		print(string(iRune))
 	}
 	print("\n")
 }
