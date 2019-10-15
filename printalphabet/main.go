@@ -1,9 +1,12 @@
 package main
 
+import "github.com/01-edu/z01"
+
 func main() {
 	var aRune rune = 'z'
+	var endRune rune = '\n'
 	for iRune := 'a'; iRune <= aRune; iRune++ {
-		print(string(iRune))
+		z01.PrintRune(iRune)
 	}
-	print("\n")
+	z01.PrintRune(endRune)
 }
