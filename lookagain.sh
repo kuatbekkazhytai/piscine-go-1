@@ -1,3 +1,4 @@
 #!/bin/bash
 
-find . -name "*.sh" -exec sh -c 'printf "%s\n" "${0%.*}"' {} ';' | cut -b 3-
+#find -d -name "*.sh" | cut -b 2- | cut -d '.' -f1
+find -type f -name "*.sh" -exec basename {} .sh \;
