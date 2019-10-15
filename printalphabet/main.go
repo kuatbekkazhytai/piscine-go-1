@@ -1,5 +1,8 @@
 package main
 
 func main() {
-	print("abcdefghijklmnopqrstuvwxyz\n")
+	for i:=97 ; i<=122 ; i++ {
+		print(string(i))
+	}
+	print("\n")
 }
