@@ -1,4 +1,4 @@
-package main
+package isnegative
 
 func IsNegative(nb int) {
 	if nb < 0 {
