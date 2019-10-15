@@ -1,7 +1,9 @@
 package main
 
-import piscine ".."
-
 func main() {
-	piscine.fmt.Println("abcdefghijklmnopqrstuvwxyz")
+	var aRune rune = 'z'
+	for iRune := 'a'; iRune <= aRune; iRune++ {
+		print(string(iRune))
+	}
+	print("\n")
 }
