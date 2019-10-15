@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ls | wc -l
+ls -lR | egrep -c '^-|^d'
