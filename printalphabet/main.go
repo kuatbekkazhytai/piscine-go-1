@@ -1,6 +1,6 @@
 package main
 
-func main(){
+func main() {
 	var aRune rune = 'z'
 	for iRune := 'a'; iRune <= aRune; iRune++ {
 		print(string(iRune))
