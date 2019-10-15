@@ -9,7 +9,3 @@ func IsNegative(nb int) {
 		return 'F'
 	}
 }
-
-func main() {
-
-}
