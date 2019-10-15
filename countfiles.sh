@@ -1,3 +1,5 @@
 #!/bin/bash
 
-ls -lR | egrep -c '^-|^d'
+a="$(ls -lR | egrep -c '^-|^d')"
+((a--))
+echo $a
