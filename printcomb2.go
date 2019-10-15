@@ -2,7 +2,7 @@ package printcomb2
 
 import "github.com/01-edu/z01"
 
-func PrintComb() {
+func PrintComb2() {
 	var iRune rune = '0'
 	var jRune rune = '0'
 	var kRune rune = '0'
