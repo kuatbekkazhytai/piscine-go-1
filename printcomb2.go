@@ -23,25 +23,25 @@ func PrintComb() {
 						}
 					}
 					if lRune == '9' {
-						lRune := '0'
+						lRune = '0'
 					} else {
 						lRune++
 					}
 				}
 				if kRune == '9' {
-					kRune := '0'
+					kRune = '0'
 				} else {
 					kRune++
 				}
 			}
 			if jRune == '9' {
-				jRune := '0'
+				jRune = '0'
 			} else {
 				jRune++
 			}
 		}
 		if iRune == '9' {
-			iRune := '0'
+			iRune = '0'
 		} else {
 			iRune++
 		}
