@@ -1,10 +1,10 @@
 package basicatoi
 
 func BasicAtoi(s string) int {
-	runes := []rune(s)
+	bytes := []byte(s)
 
 	var res int = 0
-	for r := range runes {
+	for r := range bytes {
 		res *= 10
 		if r == '0' {
 			res += 0
