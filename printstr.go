@@ -3,8 +3,8 @@ package printstr
 import "github.com/01-edu/z01"
 
 func PrintStr(str string) {
-	bytes := []rune(str)
-	for i, v := range bytes {
+	runes := []rune(str)
+	for v := range runes {
 		z01.PrintRune(v)
 	}
 }
