@@ -8,13 +8,7 @@ func StrRev(s string) string {
 		len++
 		v = v
 	}
-	var l int
-	if len%2 == 0 {
-		l = len / 2
-	} else {
-		l = len/2 - 1
-	}
-	for i := 0; i < l; i++ {
+	for i := 0; i < len/2; i++ {
 		tempByte = bytes[i]
 		bytes[i] = bytes[len-i-1]
 		bytes[len-i-1] = tempByte
