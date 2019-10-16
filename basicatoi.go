@@ -2,7 +2,6 @@ package basicatoi
 
 func BasicAtoi(s string) int {
 	bytes := []byte(s)
-
 	var res int = 0
 	for r := range bytes {
 		res *= 10
@@ -24,7 +23,7 @@ func BasicAtoi(s string) int {
 			res += 7
 		} else if r == '8' {
 			res += 8
-		} else {
+		} else if r == '9' {
 			res += 9
 		}
 	}
