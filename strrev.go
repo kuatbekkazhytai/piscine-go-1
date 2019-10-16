@@ -9,15 +9,15 @@ func StrRev(s string) string {
 		v = v
 	}
 	var l int
-	if len % 2 == 0 {
+	if len%2 == 0 {
 		l = l / 2
 	} else {
-		l = l / 2 - 1
+		l = l/2 - 1
 	}
 	for i := 0; i <= l; i++ {
 		tempRune = runes[i]
-		runes[i] = runes[l + i + 1]
-		runes[l + i + 1] = tempRune
+		runes[i] = runes[l+i+1]
+		runes[l+i+1] = tempRune
 	}
 	return string(runes)
 }
