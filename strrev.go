@@ -14,7 +14,7 @@ func StrRev(s string) string {
 	} else {
 		l = len/2 - 1
 	}
-	for i := 0; i <= l; i++ {
+	for i := 0; i < l; i++ {
 		tempByte = bytes[i]
 		bytes[i] = bytes[len-i-1]
 		bytes[len-i-1] = tempByte
