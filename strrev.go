@@ -8,10 +8,16 @@ func StrRev(s string) string {
 		len++
 		v = v
 	}
-	for i := 0; i <= len/2; i++ {
+	var l int
+	if len % 2 == 0 {
+		l = l / 2
+	} else {
+		l = l / 2 - 1
+	}
+	for i := 0; i <= l; i++ {
 		tempRune = runes[i]
-		runes[i] = runes[i*2]
-		runes[i*2] = tempRune
+		runes[i] = runes[l + i + 1]
+		runes[l + i + 1] = tempRune
 	}
 	return string(runes)
 }
