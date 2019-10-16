@@ -1,10 +1,10 @@
 package strrev
 
 func StrRev(s string) string {
-	runes := []rune(s)
+	bytes := []byte(s)
 	var len int = 0
-	var tempRune rune
-	for v := range runes {
+	var tempByte byte
+	for v := range bytes {
 		len++
 		v = v
 	}
@@ -15,9 +15,9 @@ func StrRev(s string) string {
 		l = l/2 - 1
 	}
 	for i := 0; i <= l; i++ {
-		tempRune = runes[i]
-		runes[i] = runes[l+i+1]
-		runes[l+i+1] = tempRune
+		tempByte = bytes[i]
+		bytes[i] = bytes[l+i+1]
+		bytes[l+i+1] = tempByte
 	}
-	return string(runes)
+	return string(bytes)
 }
