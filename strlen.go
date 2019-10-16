@@ -5,7 +5,7 @@ func StrLen(str string) int {
 	var count int = 0
 	for i := range runes {
 		count++
-		i = 'a'
+		i = i
 	}
 	return count
 }
