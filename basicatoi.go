@@ -7,23 +7,32 @@ func BasicAtoi(s string) int {
 		res *= 10
 		if r == '0' {
 			res += 0
-		} else if r == '1' {
+		}
+		if r == '1' {
 			res += 1
-		} else if r == '2' {
+		}
+		if r == '2' {
 			res += 2
-		} else if r == '3' {
+		}
+		if r == '3' {
 			res += 3
-		} else if r == '4' {
+		}
+		if r == '4' {
 			res += 4
-		} else if r == '5' {
+		}
+		if r == '5' {
 			res += 5
-		} else if r == '6' {
+		}
+		if r == '6' {
 			res += 6
-		} else if r == '7' {
+		}
+		if r == '7' {
 			res += 7
-		} else if r == '8' {
+		}
+		if r == '8' {
 			res += 8
-		} else if r == '9' {
+		}
+		if r == '9' {
 			res += 9
 		}
 	}
