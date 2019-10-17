@@ -6,5 +6,4 @@ func main() {
 	for iRune := 'a'; iRune <= 'z'; iRune++ {
 		z01.PrintRune(iRune)
 	}
-	z01.PrintRune('\n')
 }
