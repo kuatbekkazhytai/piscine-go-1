@@ -11,7 +11,8 @@ func PrintNbr(n int) {
 		} else {
 			n *= -1
 		}
-	} else {
+	}
+	if n >= 0 {
 		if n > 9 {
 			PrintNbr(n / 10)
 		}
