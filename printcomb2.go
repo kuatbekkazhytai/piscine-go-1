@@ -1,4 +1,4 @@
-package printcomb2
+package piscine_go
 
 import "github.com/01-edu/z01"
 

@@ -1,4 +1,4 @@
-package ultimatedivmod
+package piscine_go
 
 func UltimateDivMod(a *int, b *int) {
 	c := *a / *b
