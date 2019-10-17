@@ -1,7 +1,7 @@
 package piscine_go
 
 func Atoi(s string) int {
-	if s == "0" {
+	if s == "" {
 		return 0
 	}
 	runes := []rune(s)
