@@ -1,4 +1,4 @@
-package piscine_go
+package piscine
 
 func SortIntegerTable(table []int) {
 	var len int = 0

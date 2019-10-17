@@ -1,4 +1,4 @@
-package piscine_go
+package piscine
 
 func StrRev(s string) string {
 	bytes := []byte(s)

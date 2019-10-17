@@ -1,4 +1,4 @@
-package piscine_go
+package piscine
 
 func Swap(a *int, b *int) {
 	*a += *b

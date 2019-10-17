@@ -1,4 +1,4 @@
-package piscine_go
+package piscine
 
 func Atoi(s string) int {
 	if s == "" {
