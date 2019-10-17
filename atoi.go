@@ -1,6 +1,9 @@
 package piscine_go
 
 func Atoi(s string) int {
+	if s == "0" {
+		return 0
+	}
 	runes := []rune(s)
 	var res int = 0
 	var neg bool = false
