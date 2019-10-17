@@ -4,17 +4,20 @@ import "github.com/01-edu/z01"
 
 func PrintNbr(n int) {
 	if n < 0 {
-		n *= -1
 		z01.PrintRune('-')
-	} else if n == 0 {
-		z01.PrintRune('0')
+		if n == -9223372036854775808 {
+			z01.PrintRune('9')
+			n = -223372036854775808
+		}
+		n *= -1
+	} else {
+		if n > 9 {
+			PrintNbr(n / 10)
+		}
+		r := '0'
+		for i := 0; i < n%10; i++ {
+			r++
+		}
+		z01.PrintRune(r)
 	}
-	if n > 9 {
-		PrintNbr(n / 10)
-	}
-	r := '0'
-	for i := 0; i < n%10; i++ {
-		r++
-	}
-	z01.PrintRune(r)
 }
