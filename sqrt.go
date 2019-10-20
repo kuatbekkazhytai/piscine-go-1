@@ -11,6 +11,6 @@ func Sqrt(nb int) int {
 	if res*res != nb {
 		return 0
 	} else {
-		return nb
+		return res
 	}
 }
